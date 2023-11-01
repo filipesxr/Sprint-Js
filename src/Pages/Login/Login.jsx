@@ -8,8 +8,8 @@ export default function Login(){
 
     // UseState para armazenar os dados do Form
     const [usuario, setUsuario] = useState({
-        'email':"",
-        'senha':""
+        email:"",
+        senha:""
     })
 
     // Preenchimento do form
@@ -27,28 +27,28 @@ export default function Login(){
         let users;
 
         try {
-            const response = await fetch ('....')
-            users = await response.json()
+            const response = await fetch ("http://localhost:5000/usuarios");
+            users = await response.json();
         } catch (error) {
-            alert('Ocorreu um erro!')
+            alert('Ocorreu um erro!');
         }
 
         // Realizando a validação do usuário
-        for (let index = 0; index < users.length; index++) {
-            const user = users[index];
-            
+        for (let x = 0; x < users.length; x++) {
+            const user = users[x];
             // Realizando a comparação
-            if (user.email == usuario.email && user.senha == usuario.senha){
+            if(user.email == usuario.email && user.senha == usuario.senha){
                 alert('LogIn realizado!');
-                navigate('/');
+                // Redirecionando pra página Home
+                navigate('/Home');
                 return;
             }
         }
         
         alert('LogIn ou senha incorretos!')
         setUsuario({
-            "email":"",
-            "senha":""
+            email:"",
+            senha:""
         })
     }
     
@@ -66,7 +66,7 @@ export default function Login(){
                         </div>
                         <div>
                             <label htmlFor="idSenha">Senha</label>
-                            <input type='password' name='password' id='idPassword' placeholder='********' value={usuario.senha} onChange={handleChange} />
+                            <input type='password' name='senha' id='idSenha' placeholder='********' value={usuario.senha} onChange={handleChange} />
                         </div>
                         <div>
                             <button>LOGIN</button>
