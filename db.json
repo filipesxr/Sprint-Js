@@ -1,0 +1,43 @@
+{
+    "usuarios":[{
+        "nome":"Lev Furtado",
+        "email":"levfurtado6357@gmail.com",
+        "senha":"erat"
+    }, {
+        "nome":"Yen Gonçalves",
+        "email":"yengonalves@gmail.com",
+        "senha":"Fusce"
+    }, {
+        "nome":"Amir de Carvalho",
+        "email":"amirdecarvalho6865@gmail.com",
+        "senha":"non"
+    }, {
+        "nome":"Demetrius Aguiar",
+        "email":"demetriusaguiar6016@gmail.com",
+        "senha":"nec,"
+    }, {
+        "nome":"Colton de Matos",
+        "email":"coltondematos3459@gmail.com",
+        "senha":"mollis"
+    }, {
+        "nome":"Lana Melo",
+        "email":"lanamelo@gmail.com",
+        "senha":"scelerisque"
+    }, {
+        "nome":"Whitney Gomes",
+        "email":"whitneygomes@gmail.com",
+        "senha":"facilisis."
+    }, {
+        "nome":"Oliver Marques",
+        "email":"olivermarques@gmail.com",
+        "senha":"in"
+    }, {
+        "nome":"Raphael Abreu",
+        "email":"raphaelabreu2978@gmail.com",
+        "senha":"magnis"
+    }, {
+        "nome":"Beau dos Anjos",
+        "email":"beaudosanjos@gmail.com",
+        "senha":"mollis"
+    }]
+}
