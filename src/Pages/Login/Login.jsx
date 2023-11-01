@@ -62,14 +62,12 @@ export default function Login(){
                         <legend>Gerenciar Sua Conta</legend>
                         <div>
                             <label htmlFor="idEmail">Email</label>
-                            <input type='email' name='email' id='idEmail' placeholder='seuemail@gmail.com' onChange={handleChange} />
+                            <input type='email' name='email' id='idEmail' placeholder='seuemail@gmail.com' value={usuario.email} onChange={handleChange} />
                         </div>
-
                         <div>
                             <label htmlFor="idSenha">Senha</label>
-                            <input type='password' name='password' id='idPassword' placeholder='********' onChange={handleChange} />
+                            <input type='password' name='password' id='idPassword' placeholder='********' value={usuario.senha} onChange={handleChange} />
                         </div>
-
                         <div>
                             <button>LOGIN</button>
                         </div>
