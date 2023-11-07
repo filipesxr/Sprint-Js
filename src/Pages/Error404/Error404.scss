@@ -1,0 +1,26 @@
+@import '../../Style/Variables.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.error{
+    align-items: center;
+    text-align: center;
+    margin: 300px;
+    padding: 50px;
+    border: none;
+    border-radius: 15px ;
+    background-color: var(--containerColor);
+    color: var(--secondaryColor);
+
+    & h1{
+        color: red;
+    }
+
+    & p{
+        font-size: 18px;
+    }
+}
