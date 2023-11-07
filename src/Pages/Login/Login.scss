@@ -1,7 +1,9 @@
-@import '../../Style/variables.scss';
+@import '../../Style/Variables.scss';
 
 body{
-    background-color: #1A1D29
+    height: 100vh;
+    overflow: auto;
+    background-color: #1A1D29;
 }
 
 img{

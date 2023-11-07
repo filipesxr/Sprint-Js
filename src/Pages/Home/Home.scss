@@ -1,0 +1,64 @@
+@import '../../Style/Variables.scss';
+
+.header-home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--containerColor);
+    color: var(--secondaryColor);
+    border-radius: 18px;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.table-home-container {
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    background-color: var(--containerColor);
+    margin: 100px;
+    height: 500px;
+    border-radius: 18px;
+
+    & .table-home{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        background-color: var(--inputColor);
+        font-size: 18px;
+
+        & thead{
+            color: var(--secondaryColor);
+            background-color: var(--accentColor);
+        }
+
+        & th, td{
+            padding: 25px;
+            color: var(--secondaryColor);
+            text-align: center;
+        }
+    }
+
+    & .info-table-home{
+        color: var(--secondaryColor);
+        background-color: var(--inputColor);
+        padding: 15px;
+        margin: 50px;
+
+        & h3{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            background-color: var(--accentColor);
+            padding: 5px;
+            width: 100%;
+            font-size: 20px;
+        }
+
+        & p{
+            padding: 10px;
+            font-size: 18px;
+        }
+    }
+}
