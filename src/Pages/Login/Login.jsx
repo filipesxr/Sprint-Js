@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import './Login.scss';
+import logoMw from '../../Image/mw.png'
 import { useNavigate } from 'react-router';
+import { MdOutlineEmail, MdPassword } from 'react-icons/md';
 
 export default function Login(){
+    const logoAlt = 'Logo MW'
+
     // UseNavigate para redirecionar
     const navigate = useNavigate(); 
 
@@ -54,23 +58,29 @@ export default function Login(){
     
     return(
         <>
-            <h1>LogIn</h1>
-
-            <div>
+            <div className='form-login'>
                 <form onSubmit={handleSubmit}>
-                    <fieldset>
-                        <legend>Gerenciar Sua Conta</legend>
-                        <div>
-                            <label htmlFor="idEmail">Email</label>
+                    <fieldset className='form'>
+                        <header className='header-form'>
+                            <img src={logoMw} alt={logoAlt} />
+                            <h2>Gerenciar Sua Conta</h2>
+                        </header>
+
+                        <div className='email-form'>
+                            <label htmlFor="idEmail"><MdOutlineEmail /></label>
                             <input type='email' name='email' id='idEmail' placeholder='seuemail@gmail.com' value={usuario.email} onChange={handleChange} />
                         </div>
-                        <div>
-                            <label htmlFor="idSenha">Senha</label>
+
+                        <div className='password-form'>
+                            <label htmlFor="idSenha"><MdPassword /></label>
                             <input type='password' name='senha' id='idSenha' placeholder='********' value={usuario.senha} onChange={handleChange} />
                         </div>
-                        <div>
-                            <button>LOGIN</button>
+
+                        <div className='button-form'>
+                            <button>ENTRAR</button>
                         </div>
+
+                        <small className='copyright-form'>&copy; Sledge</small>
                     </fieldset>
                 </form>
             </div>

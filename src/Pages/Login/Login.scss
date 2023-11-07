@@ -1,0 +1,103 @@
+@import '../../Style/variables.scss';
+
+body{
+    background-color: #1A1D29
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.form-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+
+    & .form{
+        width: 800px;
+        height: 480px;
+        margin: 100px;
+        border: none;
+        border-radius: 18px;
+        background-color: var(--containerColor);
+
+        & .header-form{
+            text-align: center;
+            margin: 40px;
+            color: var(--secondaryColor);
+        }
+
+        & .email-form{
+            margin: 30px;
+            text-align: center;
+            color: var(--secondaryColor);
+
+            & label{
+                margin: 10px;
+            }
+
+            & input{
+                width: 40%;
+                height: 40px;
+                border: 1px solid var(--accentColor);
+                border-radius: 18px;
+                background-color: var(--inputColor);
+                color: var(--secondaryColor);
+            }
+
+            & input::placeholder{
+                color: var(--secondaryColor);
+            }
+        }
+
+        & .password-form{
+            margin: 30px;
+            text-align: center;
+            color: var(--secondaryColor);
+
+            & label{
+                margin: 10px;
+            }
+
+            & input{
+                width: 40%;
+                height: 40px;
+                border: 1px solid var(--accentColor);
+                border-radius: 18px;
+                background-color: var(--inputColor);
+                color: var(--secondaryColor);
+            }
+
+            & input::placeholder{
+                color: var(--secondaryColor);
+            }
+        }
+
+        & .button-form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 30px;
+
+            & button{
+                background-color: var(--accentColor);
+                color: var(--secondaryColor);
+                border: none;
+                border-radius: 18px;
+                width: 50%;
+                height: 40px;
+                font-size: 15px;
+                cursor: pointer;
+            }
+        }
+
+        & .copyright-form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondaryColor);
+        }
+    }   
+}
